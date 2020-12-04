@@ -1,0 +1,64 @@
+/* These styles will be applied on devices that have a width of at least 599px */
+@media screen and (min-width: 599px) {
+  body {
+    padding-bottom: 0;
+  }
+
+  /*****************
+   * HEADER MOBILE *
+   *****************/
+  .header-mobile {
+    display: none;
+  }
+
+  /******************
+   * HEADER DESKTOP *
+   ******************/
+  .header-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .upload {
+    border: 1px solid var(--gray);
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+  }
+
+  .search-icon,
+  .upload-icon,
+  .home-icon {
+    font-size: 1.7rem;
+  }
+
+  .notifications-icon {
+    font-size: 1.5rem;
+  }
+
+  .avatar img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  /********
+   * GRID *
+   ********/
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* These styles will be applied on devices that have a width of at least 1024px */
+@media screen and (min-width: 1024px) {
+  /********
+   * GRID *
+   ********/
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+  }
+
+  .item img:hover {
+    transform: scale(1.2);
+  }
+}
